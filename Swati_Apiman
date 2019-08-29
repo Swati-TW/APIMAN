@@ -17,7 +17,7 @@ Because a Service can be consumed through multiple Plans, the Plan provides a co
 When consuming APIs an Application must be created in the API Manager. _An Application is typically a representation of an API client of some kind, perhaps a mobile app or an integration application_. The Application is given a name and a description. Applications can also have configured Policies, which are applied whenever the Application invokes any Service.
 ###Contract
 Once an Application is created, APIs can be consumed by creating Contracts between the Application and the Services it wishes to invoke. A Contract is simply a link between an Application and a Service through one of the Service’s available Plans.
-###Policy
+###Policy 
 All of these concepts are ultimately in support of determining which Policies will get applied when a particular Request is received by the API Gateway. The Policy is the unit of governance executed at runtime, and is therefore the most important core concept. Common examples of Policies include Authentication, Rate Limiting, and IP filtering.
 Policies can be configured in three places, the Plan, Service, and Application. These Policies are then applied to API requests by the API Gateway at runtime.
 ##API Gateway Concepts
